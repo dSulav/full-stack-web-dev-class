@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.image{
+    margin: 0;
+    padding: 0;
+    background: url("https://i.guim.co.uk/img/media/f399717f6fb80a54f8c8e8191e5ae94c8f2c80fc/0_100_3487_2092/master/3487.jpg?width=700&quality=85&auto=format&fit=max&s=0d4b88c7abe3c0011bb03f64203fa336");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(70%);
+    animation-name: expand-fade-in;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+.image > .title{
+    font-size: 4em;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: sans-serif;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+}
+
+@keyframes expand-fade-in{
+    from{
+        opacity: 0%;
+        width: 0%;
+    }
+    to{
+        opacity: 100%;
+        width: 100%;
+    }
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+
+}
